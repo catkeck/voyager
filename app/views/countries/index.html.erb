@@ -1,0 +1,7 @@
+<h1> Select a country </h1>
+
+<% @countries.each do |country| %>
+  <% country.attraction.each do |attraction| %>
+    <%= attraction.name %>
+  <% end %> 
+<% end %>
