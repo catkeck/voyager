@@ -1,0 +1,7 @@
+<%= form_for @country do |form| %>
+    <%= form.label :name %> <br />
+    <%= form.text_field :name %> <br />
+    <%= form.label :continent %> <br />
+    <%= form.text_area :continent %><br />
+    <%= form.submit "Add new country" %><br />
+  <% end %>

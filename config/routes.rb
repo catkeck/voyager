@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
   root to: 'countries#index'
+  resources :countries do 
+    resources :cities do
+      resources :attractions
+    end
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,3 +1,3 @@
 class Country < ActiveRecord::Base
-  has_many :attractions
+  has_many :cities
 end

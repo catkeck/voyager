@@ -1,0 +1,27 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.list { 
+  width:400px; 
+  padding-left: 25%;
+  padding-right: 25%;
+  ol { 
+    font-style:italic; 
+    font-family:Georgia, Times, serif; 
+    font-size:24px; 
+    color:#00000; 
+    a:link, a:visited, a:hover, a:active {
+      color:#000000;
+    }
+    li {
+      p {
+        padding:8px; 
+        font-style:normal; 
+        font-family:Arial; 
+        font-size:13px; 
+        color:#eee; 
+        border-left: 1px solid #999;
+      }
+    }
+  }
+}

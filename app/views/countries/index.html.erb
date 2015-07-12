@@ -1,7 +1,10 @@
-<h1> Select a country </h1>
+<div class = "center jumbotron">
+  <h1> Select a country </h1>
 
-<% @countries.each do |country| %>
-  <% country.attraction.each do |attraction| %>
-    <%= attraction.name %>
-  <% end %> 
-<% end %>
+<div class="list">
+  <ol>
+    <% @countries.each do |country| %>    
+        <li><p><%= link_to country.name, country_path(country) %> </p> </li>
+    <% end %>
+  </ol>
+</div>
