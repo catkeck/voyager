@@ -1,8 +1,8 @@
 <h1> List of attractions </h1>
 
-<img src = <%= city.image%> style="width:500px">
+<img src = <%= @city.image%> style="width:500px">
 
 <% @city.attractions.each do |attraction| %>
   <h3> <%= attraction.name%> </h3> <br>
   <% end %>   
-<% end %>
+

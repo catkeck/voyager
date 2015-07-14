@@ -1,7 +1,14 @@
-<h1> List of attractions </h1>
+<h1> <%= @country.name%> </h1>
 
-<img src = <%= @country.image%> style="width:500px">>
+<div class= "main_image">
+  <img src = <%= @country.image%> style="width:500px">
+</div>
 
+<div class= "instruct">
+  <h4> Below, you can find listed the cities you may visit in <%=@country.name%> </h4>
+</div>
 <% @country.cities.each do |city| %>
-  <h3> <%= city.name%> </h3> <br>
+  <h3><%= link_to city.name, country_city_path(country_id: @country.id, id: city.id)%>
+  <h3> <a href="/countries/<%=@country.id%>/city/<%=city.id%>"><%=city.name%></a></h3>
 <% end %>
+

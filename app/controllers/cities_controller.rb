@@ -1,4 +1,4 @@
-class Cities < ApplicationController
+class CitiesController < ApplicationController
 
   def index
     @cities = City.all
@@ -7,7 +7,7 @@ class Cities < ApplicationController
   def new
     @city = City.new
   end
-  
+
   def show
    @city = City.find(params[:id])
   end
