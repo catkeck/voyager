@@ -9,6 +9,5 @@
 </div>
 <% @country.cities.each do |city| %>
   <h3><%= link_to city.name, country_city_path(country_id: @country.id, id: city.id)%>
-  <h3> <a href="/countries/<%=@country.id%>/city/<%=city.id%>"><%=city.name%></a></h3>
 <% end %>
 

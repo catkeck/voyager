@@ -2,9 +2,18 @@
   <h1> Select a country </h1>
 
 <div class="list">
-  <ol>
-    <% @countries.each do |country| %>    
-        <li><p><%= link_to country.name, country_path(country) %> </p> </li>
-    <% end %>
-  </ol>
+  <table>
+    <tbody>
+      <% @countries.each do |country| %>   
+        <tr>
+          <td> 
+              <li><p><%= link_to country.name, country_path(country) %> </p> </li>
+          </td>
+          <td>
+            <img src = <%= country.image%> style="width:100px">
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 </div>
