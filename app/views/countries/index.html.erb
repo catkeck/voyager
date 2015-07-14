@@ -1,16 +1,16 @@
 <div class = "center jumbotron">
   <h1> Select a country </h1>
-
+</div>
 <div class="list">
   <table>
     <tbody>
       <% @countries.each do |country| %>   
         <tr>
           <td> 
-              <li><p><%= link_to country.name, country_path(country) %> </p> </li>
+              <p><%= link_to country.name, country_path(country) %> </p> 
           </td>
           <td>
-            <img src = <%= country.image%> style="width:100px">
+            <img src = <%= country.image%> style="width:200px">
           </td>
         </tr>
       <% end %>

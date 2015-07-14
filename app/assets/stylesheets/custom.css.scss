@@ -1,8 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  background-color: #eeeeee;
+}
 .list { 
-  width:400px; 
   padding-left: 25%;
   padding-right: 25%;
   ol { 
@@ -12,6 +14,7 @@
     color:#00000; 
     a:link, a:visited, a:hover, a:active {
       color:#000000;
+
     }
     li {
       p {
@@ -50,11 +53,15 @@ body {
 
 
 .list {
-  background: #fafafa url(http://jackrugile.com/images/misc/noise-diagonal.png);
   color: #444;
   font: 100%/30px 'Helvetica Neue', helvetica, arial, sans-serif;
   text-shadow: 0 1px 0 #fff;
+  a {
+    text-decoration: none;
+  }
 }
+
+
 
 .list strong {
   font-weight: bold; 
@@ -157,4 +164,8 @@ body {
 .list tbody:hover tr:hover td {
   color: #444;
   text-shadow: 0 1px 0 #fff;
+}
+
+.jumbotron h1, .jumbotron .h1 {
+  font-size: 30px;
 }
