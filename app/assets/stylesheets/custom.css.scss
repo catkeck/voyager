@@ -1,9 +1,28 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body {
-  background-color: #eeeeee;
+
+html { 
+  background: url('/images/background.jpg') no-repeat center center fixed !important;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
+
+body {
+  background-color: transparent;
+  padding-top: 60px;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+.navbar {
+  background-color: #000000;
+}
+
 .list { 
   padding-left: 25%;
   padding-right: 25%;
@@ -42,9 +61,7 @@ body {
   font-family:Georgia, Times, serif; 
 }
 
-body {
-  padding-top: 60px;
-}
+
 @media (max-width: 979px) {
   body {
     padding-top: 0px;
@@ -59,16 +76,12 @@ body {
   a {
     text-decoration: none;
   }
-}
-
-
-
-.list strong {
-  font-weight: bold; 
-}
-
-.list em {
-  font-style: italic; 
+  strong {
+    font-weight: bold; 
+  }
+  em {
+    font-style: italic; 
+  }
 }
 
 .list table {
@@ -79,7 +92,7 @@ body {
   line-height: 24px;
   margin: 30px auto;
   text-align: left;
-  width: 800px;
+  width: auto;
 } 
 
 .list th {
@@ -105,7 +118,7 @@ body {
   margin: 1px 0 0 0;
   position: absolute;
   top: 25%;
-  width: 100%;
+  width: auto;
 }
 
 .list th:first-child {
@@ -169,3 +182,8 @@ body {
 .jumbotron h1, .jumbotron .h1 {
   font-size: 30px;
 }
+
+.container {
+  height: 6%;
+}
+
