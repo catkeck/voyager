@@ -1,4 +1,4 @@
-<div class = "center jumbotron">
+<div class = "center">
   <h1> <%= @country.name%> </h1>
 </div>
 
@@ -6,7 +6,7 @@
   <img src = <%= @country.image%> style="width:500px">
 </div>
 
-<div class= "instruct">
+<div class= "description">
   <h4> Below, you can find listed the cities you may visit in <%=@country.name%> </h4>
 </div>
 <% @country.cities.each do |city| %>

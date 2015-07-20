@@ -6,13 +6,16 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="<%= @home_page ? 'homepage' : @home_page2 ? 'homepage2' : ''%>">
   <header class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
       <a href="<%= root_path %>"> <h1> Voyager</h1> </a> 
       <nav>
         <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "Log in", '#' %></li>
+          <li><%= link_to "Home", static_pages_home_path %></li>
+          <li><%= link_to "About", static_pages_about_path %></li>
+          <li><%= link_to "Travel Sites", countries_path %></li>
+          <li><%= link_to "Log in", "#" %></li>
         </ul>
       </nav>
     </div>
