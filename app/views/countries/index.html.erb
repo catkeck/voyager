@@ -6,19 +6,18 @@
 <div class = "description">
 Welcome to Voyager! This site is for helping individuals figure out where they should go and what they should do on their next vacation. Select a country below to see a list of cities you can visit.
 </div>
+
 <div class="list">
-  <table>
-    <tbody>
-      <% @countries.each do |country| %>   
-        <tr>
-          <td> 
-              <p><%= link_to country.name, country_path(country) %> </p> 
-          </td>
-          <td>
-            <img src = <%= country.image%> style="width:80%">
-          </td>
-        </tr>
-      <% end %>
-    </tbody>
+<table>
+    <% @countries.each do |country| %>   
+      <tr> <td>
+        <div id = "container">
+          <a href="<%=country_path(country)%>"> 
+          <img src = <%= country.image%> style="width:80%" alt="" />
+          <span><%= country.name %></span>
+        </a>
+        </div>
+      </td> </tr>
+    <% end %>
   </table>
 </div>
